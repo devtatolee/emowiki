@@ -1,92 +1,72 @@
 body{
     margin:0;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
 }
-
 a{
     text-decoration: none;
-    color: black;
+    color: antiquewhite;
 }
-.navbar {
+
+.navbar{
+    background-color: navy;
     display: flex;
     justify-content: space-between;
+    padding: 20px 25px;
     align-items: center;
-    background-color:rgb(17, 182, 127);
-    padding: 8px 12px;
 }
 
-.navbar__logo {
+.navbar__logo{
     font-size: 24px;
+    color:plum;
 }
 
-.navbar__logo i {
-    color:brown;
+.navbar__logo i{
+    color: pink;
 }
 
-.navbar__menu {
-    display:flex;
+.navbar__menu{
+    display: flex;
     list-style: none;
-    padding-left: 0;
 }
 
 .navbar__menu li{
     padding: 8px 20px;
+    border-radius: 5px;
 }
 
 .navbar__menu li:hover{
-    background-color: darkorange;
-    border-radius: 4px;
+    background-color: orange;
 }
+
 .navbar__icons{
-    list-style: none;
-    color: purple;
     display: flex;
-    padding:0;
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 15px;
 }
 
-.navbar__icons li {
-    padding: 8px 12px;
+.navbar__icons li{
+    padding: 3px 5px;
+    margin: 4px;
 }
 
-.navbar__toggleBtn{
-    display: none;
-    position:absolute;
-    right: 32px;
-    font-size: 24px;
-    color: purple;
+.navbar__icons i{
+    color:plum;
 }
 
-@media screen and (max-width: 768px) {
-    .navbar {
+@media screen and (max-width:768px){
+    .navbar{
         flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 24px;
+        padding-top: 15px;
     }
 
     .navbar__menu{
-        display: none;
         flex-direction: column;
         align-items: center;
+    }
+
+    .navbar__logo{
         width: 100%;
-    }
-
-    .navbar__menu li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar__icons{
-        display: none;
-        justify-content: center;
-        width:100%;
-    }
-
-    .navbar__toggleBtn{
-        display: block;
-    }
-
-    .navbar__menu.active,
-    .navbar__icons.active{
-        display: flex;
+        justify-content: flex-start;
     }
 }
